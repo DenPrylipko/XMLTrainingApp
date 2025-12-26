@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingHorizontal="16dp">
+
+    <LinearLayout
+        android:id="@+id/avatarBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivAvatarPicture"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/img_avatar_halavi_film"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:id="@+id/statusBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some description for the user"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:id="@+id/followersBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvFollowersNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"/>
+
+            <TextView
+                android:id="@+id/tvFollowersText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/postsBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvPostsNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+
+            <TextView
+                android:id="@+id/tvPostsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/likesBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvLikesNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"/>
+
+            <TextView
+                android:id="@+id/tvLikesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Likes"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonFollow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Follow"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/buttonMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Message"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"/>
+
+</LinearLayout>
